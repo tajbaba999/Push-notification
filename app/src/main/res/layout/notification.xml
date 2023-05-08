@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="77dp"
+                app:srcCompat="@drawable/college"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alert about Attendence"
+                android:layout_toRightOf="@+id/image"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:text="Your attendence id below 75% you need to come to college daily and you should write a ltter to HOD"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="58dp"
+                />
+
+        </RelativeLayout>
+</RelativeLayout>
